@@ -1,9 +1,11 @@
 ﻿using Phase2Nandoso.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.Entity;
 
 namespace Phase2Nandoso.DAL
 {
+    [DbConfigurationType(typeof(MySqlEFConfiguration))]
     public class NandosoContext : DbContext
     {
 
